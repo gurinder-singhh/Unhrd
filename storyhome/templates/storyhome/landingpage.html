@@ -1,0 +1,186 @@
+{% extends 'storyhome/template.html' %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+
+<!-- Hero section design -->
+    <div class="container-fluid hero-container">
+
+        {%if messages%}
+        {% for message in messages%}
+        <p><strong style="color: red !important;" class="alert alert-success">{{message}}</strong></p>
+        {% endfor %}
+        {% endif %}
+
+
+        <div class="row">
+            <div class="col"> &nbsp; </div>
+        </div>
+        <div class="row">
+            <div class="col">&nbsp; </div>
+        </div>
+        <div class="row">
+            <div class="col"> &nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="col">&nbsp; </div>
+        </div>
+        <div class="row">
+            <div class="col"> &nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="col">&nbsp; </div>
+        </div>
+        <div class="row">
+            <div class="col-7"> &nbsp;</div>
+            <div class="col-5">
+                <a class="btn btn-green btn-Comics" href="#">Comics</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">&nbsp; </div>
+            <div class="col-3">
+                <a class="btn btn-green btn-stories" href="#">Stories</a>
+            </div>
+            <div class="col-3">
+                <a class="btn btn-green btn-blog" href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">&nbsp;</div>
+            <div class="col-1">
+                <h1>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Express","Explore" ]'>
+                    <span class="wrap"></span>
+                    </a>
+                </h1>
+            </div>
+            <div class="col-3">
+                &nbsp;
+            </div>
+            <div class="col-3">
+                &nbsp;
+            </div>
+            <div class="col-3">
+                <a href="#" class="btn btn-green btn-shortst">Short Stories</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7"> &nbsp; </div>
+            <div class="col-3">
+                <a href="#" class="btn btn-green btn-poetry">Poetry</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">&nbsp; </div>
+            <div class="col-3">
+                <a href="#" class="btn btn-green btn-novels">Novels</a>
+            </div>
+            <div class="col-4">
+                <a href="#" class="btn btn-green btn-journals">Journals</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"> &nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="col">&nbsp; </div>
+        </div>
+        <div class="row">
+            <div class="col"> &nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="col">&nbsp; </div>
+        </div>
+        <div class="row">
+            <div class="col"> &nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="col">&nbsp; </div>
+        </div>
+        <div class="row">
+    </div>
+    </div>
+
+<!-- Features detail section -->
+<div class="container-fluid feature-container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <p class="landingpage-p">Lorem Ipsum is simply dummy<br>
+                the printing and typesetting.<br>
+                Lorem Ipsum has been the</p>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <p class="landingpage-p">Lorem Ipsum is simply dummy<br>
+                the printing and typesetting.<br>
+                Lorem Ipsum has been the</p>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <p class="landingpage-p">Lorem Ipsum is simply dummy<br>
+                the printing and typesetting.<br>
+                Lorem Ipsum has been the</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <img src="genericuser.jpg" alt="Generic User Image">
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <p class="landingpage-p">Lorem Ipsum is simply dummy<br>
+                the printing and typesetting.<br>
+                Lorem Ipsum has been the</p>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <p class="landingpage-p">Lorem Ipsum is simply dummy<br>
+                the printing and typesetting.<br>
+                Lorem Ipsum has been the</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <p class="landingpage-p">Lorem Ipsum is simply dummy<br>
+                the printing and typesetting.<br>
+                Lorem Ipsum has been the</p>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+<hr>
+
+<div class="row info-section">
+    <div class="col-4">Registered Users - 343 {{total_users}} </div>
+    <div class="col-4">Total Stories - 222 {{total_articles}} </div>
+    <div class="col-4">Total reads - 3345 {{total_Views}} </div>
+</div>
+
+<!-- <div class="container">
+    <div class="hero-div-background">
+        <div class="float-left hero-tagline-style">
+            <legend>Express | Explore</legend>
+        </div>
+        <div class="float-right float-button-style">
+            </button>
+            <a class="btn btn-green" href="#">Stories</a>
+            <a class="btn btn-green" href="#">Blogs</a>
+            <a class="btn btn-green" href="#">Comics</a>
+            <a class="btn btn-green" href="#">Short Stories</a>
+            <a class="btn btn-green" href="#">Poetry</a>
+            <a class="btn btn-green" href="#">Novels</a>
+            <a class="btn btn-green" href="#">Journals</a>
+        </div>
+    </div>
+</div> -->
+
+{% endblock main %}

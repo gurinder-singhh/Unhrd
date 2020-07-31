@@ -1,0 +1,53 @@
+{% extends 'storyhome/template.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block main %}
+
+<div class="container">
+
+    <div class="row">
+    <div class="col-md-6"  >
+
+        <p class="new-message">New to Unhrd?</p>
+        <div class="login-page-text">
+            Sign up and discovery whole new world
+            of unheard experience & stories
+            from people around the world !
+        </div>
+
+    </div>
+    <div class="col-md-2" ></div>
+    <div class="col-md-4 login-row">
+    <p class="login-message">Welcome Back</p>
+    <form action="." method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+
+        <div class="form-group">
+        {{form.username}}
+        </div>
+
+        <div class="form-group">
+        {{form.password}}
+        </div>
+
+        {%if messages%}
+        {% for message in messages%}
+        <p><strong style="color: red !important;">{{message}}</strong></p>
+        {% endfor %}
+        {% endif %}
+
+
+    <a href="#"><p>Forgot Password ?</p></a>
+    <button type="submit" class="btn btn-warning">Log In</button>
+
+    </div>
+    </form >
+
+    </div>
+    </div>
+</div>
+
+{% endblock main %}

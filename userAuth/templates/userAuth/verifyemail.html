@@ -1,0 +1,16 @@
+{% extends 'storyhome/template.html' %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+
+<div class="jumbotron jumbotron-fluid">
+    {%if messages%}
+    {% for message in messages%}
+    <p >{{message}}</p>
+    {% endfor %}
+    {% endif %}
+
+</div>
+
+
+{% endblock main %}

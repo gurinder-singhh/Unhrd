@@ -1,0 +1,10 @@
+{% extends 'storyhome/template.html' %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+
+    {% for user in users%}
+        <a href="{% url 'home:addfriend' user.id %}">{{user.username}}</a>
+
+    {% endfor %}
+{% endblock main %}

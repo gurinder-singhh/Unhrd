@@ -1,0 +1,64 @@
+{% extends 'storyhome/template.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block main %}
+
+
+
+<div class="container" style="margin-top: 50px;">
+
+        <div class="row ">
+
+            <div class="col-sm-8">
+                <img src="{% static 'images/Storyimage.png' %}" class="homepage-image" >
+                <h3>Storytelling... yep. that's it.</h3>
+            </div>
+
+            <div class="col-sm-4">
+                <form action="." method="POST">
+                {% csrf_token %}
+
+                <div class="form-group">
+                {{form.username}}
+                <p><strong style="color: red !important;">{{form.username.errors|striptags}}</strong></p>
+                </div>
+
+                <div class="form-group">
+                {{form.email}}
+                <p><strong style="color: red !important;">{{form.email.errors|striptags}}</strong></p>
+                </div>
+
+                <div class="form-group">
+                {{form.password}}
+                <p><strong style="color: red !important;">{{form.password.errors}}</strong></p>
+                </div>
+
+                <div class="form-group">
+                {{form.confirm_password}}
+
+                {%if messages%}
+                {% for message in messages%}
+                <p><strong style="color: red !important;">{{message}}</strong></p>
+                {% endfor %}
+                {% endif %}
+
+
+
+
+
+                </div>
+
+
+
+
+                <button type="submit" class="btn btn-warning">Create Your Account</button>
+
+                </form >
+
+        </div>
+    </div>
+</div>
+
+{% endblock main %}

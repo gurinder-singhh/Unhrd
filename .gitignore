@@ -1,0 +1,5 @@
+/storyhome/__pycache__/
+/unhrdmodule/__pycache__/
+/.vscode/
+db.sqlite3
+unhrdenv

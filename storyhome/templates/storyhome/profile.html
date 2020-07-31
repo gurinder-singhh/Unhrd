@@ -1,0 +1,40 @@
+{% extends 'storyhome/template.html' %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+
+<div class="container-custom d-flex">
+<!-- profile picture div -->
+    <div>
+        <div class="media">
+            <img class="rounded-circle account-img" src="{{ user.profile.image.url }}" alt="">
+        </div>
+        <div class="media-body">
+            <h4 class="account-heading">{{user.username}}</h4>
+            <p class="text-secondary">no. of stories</p>
+            <p class="text-secondary">no. of followers</p>
+        </div>
+        <div class="profile-menu">
+            <ul>
+                <li>
+                    <a href="{% url 'home:profileupdate' %}">Profile</a>
+                </li>
+                <li>
+                    <a href="{% url 'home:friendslist' %}">Connections</a>
+                </li>
+                <li>
+                    <a href="#">My Stories</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile-details-menu">
+        
+        {% include 'storyhome/profilemenuoptions.html' %}
+        
+    </div>
+</div>
+
+
+{% endblock main %}

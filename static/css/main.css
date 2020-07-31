@@ -1,0 +1,230 @@
+/* body  {
+    background-color: bisque;
+} */
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.wrapper{
+    min-height: 100%;
+}
+
+.search-center{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-dark {
+    background-color:#129e92;
+}
+
+.btn-green-footer{
+    background-color:#129e92;
+    font-weight: bolder;
+    color: white;
+}
+
+.hero-tagline-style{
+    margin-top: 10%;
+    background-color: #26A69A;
+    height: 100%;
+    width: 50%;
+}
+
+.btn-green{
+    background-color: #26A69A;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.float-button-style{
+    margin-top: 7%;
+    background-color: #26A69A;
+    height: 100%;
+    width: 50%;
+}
+
+.hero-container{
+    background-color: #26A69A ;
+    color: white;
+}
+
+.btn-blog{
+    font-size: xx-large;
+}
+
+.btn-stories{
+    font-size: x-large;
+}
+
+.btn-shortst{
+    font-size: x-large;
+}
+
+.btn-poetry{
+    font-size: large;
+}
+
+.btn-journals{
+    font-size: large;
+    font-weight: bold;
+}
+
+.btn-novels{
+    font-size: xx-large;
+}
+
+.btn{
+    border: none;
+}
+
+.typewrite { color:#fff; text-decoration: none;}
+
+.landingpage-p{
+    /* border: solid;
+    border-width: thin;
+    border-radius: 10px; */
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 5%;
+}
+
+.info-section{
+    margin: 3%;
+    text-align: center;
+}
+
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+
+/* .account-heading {
+    font-size: 1rem;
+  } */
+
+  /* .container-fluid{
+      margin-top: 3%;
+  } */
+
+  .container-custom{
+    margin: 3%;
+  }
+
+  .profile-menu{
+      height: 200px;
+      border: solid;
+      border-radius: 10%;
+      border-width: thin;
+      padding: 5%;
+  }
+
+  .profile-details-menu{
+      margin-left: 3%;
+      width: 80%;
+      padding:1%;
+    /* height: 80%; */
+    border: solid;
+    /* border-radius: 30%; */
+    border-width: thin;
+  }
+
+  .homepage-image{
+   width: 500px;
+   height: 300px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+
+  }
+
+
+.page-footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+
+
+}
+
+.login-row{
+    margin-top: 20px;
+}
+
+.login-message{
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.login-page-text{
+    font-size: 20px;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.new-message{
+    font-size: 50px;
+    margin-top: 160px;
+    margin-bottom: 10px;
+}
+
+.login-page-vector{
+    border-radius: 10px;
+
+
+}
+.nav-link{
+    font-size: larger;
+    color: white !important;
+}
+
+.footer-links{
+    font-size: larger;
+    color: white !important;
+    font-family: "Segoe UI";
+    margin: 10px;
+
+}
+
+.error-message-register-form{
+    color:red !important;
+    background-color: yellow;
+}
+
+.custom-footer {
+    display: grid;
+    background-color: #129e92;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    align-items: center;
+    height: 50px;
+
+}
+
+.social-media-icons{
+    justify-self: end;
+
+}
+
+.social-media-icons > a{
+    justify-self: end;
+    margin-right: 20px;
+}
+
+
+.jumbotron{
+    margin: 30px 10% 30px 10%;
+    background-color: #e4fbf9;
+    width: 80%;
+
+}

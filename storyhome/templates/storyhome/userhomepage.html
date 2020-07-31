@@ -1,0 +1,12 @@
+{% extends 'storyhome/template.html' %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+
+{%if messages%}
+{% for message in messages%}
+<strong>{{message}}</strong>
+{% endfor %}
+{% endif %}
+
+{% endblock main %}

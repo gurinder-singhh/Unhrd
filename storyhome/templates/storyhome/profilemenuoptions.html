@@ -1,0 +1,28 @@
+
+{% load crispy_forms_tags %}
+
+
+
+
+{% if caller == 'profileupdate' %}
+    <form action="." method="POST">
+        {% csrf_token %}
+        {{form|crispy}}
+        <button type="submit">
+            Update
+        </button>
+    </form>
+{% elif caller == 'friendslist' %}
+<ul> 
+    {% for friend in friends %}
+        
+            <li>{{friend.username}} <br>
+                <a href="{% url 'home:deletefriend' friend.id %}">remove</a>
+            </li>
+
+    {% endfor %}
+    
+</ul>
+    <a href="{% url 'home:allusers' %}">add friend</a>
+{% endif %}
+
